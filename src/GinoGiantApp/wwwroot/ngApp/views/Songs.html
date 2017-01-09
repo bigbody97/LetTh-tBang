@@ -1,0 +1,26 @@
+﻿<div class="container">
+    <h2>Bordered Table</h2>
+    <p>The .table-bordered class adds borders to a table:</p>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>Artist</th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr ng-repeat="song in controller.songs">
+               <td>
+                {{song.title}}
+               </td>
+               <td>
+                   {{song.genre}}
+               </td>
+               <td>
+                   {{song.artist}}
+               </td>
+           </tr>
+        </tbody>
+    </table>
+</div>
